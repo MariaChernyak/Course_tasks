@@ -34,7 +34,15 @@ setInterval(function(){
 	str += "<p>" + names[parseInt(Math.random() * names.length)] + " из города " + cities[parseInt(Math.random() * cities.length)] ;
 	str += " купил " + parseInt(Math.random() * 10 +1) + " ед. " + goods[index].name + "</p>";
 	el.innerHTML = str;
-	container[0].appendChild(el);
-	console.log(time);
+	
+	var closeIcons = document.createElement('a');
+	closeIcons.onclick = function(){
+		this.parentNode.remove()
+	}
+	el.appendChild(closeIcons);
 
+	container[0].appendChild(el);
+
+	
 },time)
+
