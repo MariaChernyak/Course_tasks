@@ -30,7 +30,7 @@ setInterval(function(){
 	time = Math.random()*1800 + 2700;
 	el = document.createElement('div');
 	var index = parseInt(Math.random() * goods.length);
-	str = "<img src=\"img/" + goods[index].img + "\">";
+	var str = "<img src=\"img/" + goods[index].img + "\">";
 	str += "<p>" + names[parseInt(Math.random() * names.length)] + " из города " + cities[parseInt(Math.random() * cities.length)] ;
 	str += " купил " + parseInt(Math.random() * 10 +1) + " ед. " + goods[index].name + "</p>";
 	el.innerHTML = str;
