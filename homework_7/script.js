@@ -5,16 +5,16 @@ var framework = {
 	prepend: function(target, whot){
 		target.insertBefore(whot, target.firstChild)
 	},
-	replace(target, whot){
+	replace: function(target, whot){
 		target.parentNode.replaceChild(target, whot);
 	},
-	create(s){
+	create: function(s){
 		return document.createElement(s);
 	},
-	remove(target){
+	remove: function(target){
 		target.remove();
 	},
-	event(target, event, func){
+	event: function(target, event, func){
 		if(typeof target.attachEvent == "function"){
 			target.attachEvent('on' + event, func);
 		}
@@ -22,7 +22,7 @@ var framework = {
 			target.addEventListener(event, func);
 		}
 	},
-	unevent(target, event, func){
+	unevent: function(target, event, func){
 		if(typeof target.attachEvent == "function"){
 			target.detachEvent('on' + event, func);
 		}
@@ -30,7 +30,7 @@ var framework = {
 			target.removeEventListener(event, func);
 		}
 	},
-	dispatch(target, et){
+	dispatch: function(target, et){
 		var event = new Event(et);
 		target.dispatchEvent(event);
 	}
