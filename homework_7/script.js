@@ -35,10 +35,10 @@ var framework = {
 			target.removeEventListener(event, func);
 		}
 	},
-	dispatch: function(target, et){
-		// var event = new Event(et);
+	dispatch: function(target, ev){
+		// var event = new Event(ev);
 		var event = document.createEvent("Event");
-		event.initEvent(et);
+		event.initEvent(ev);
 		target.dispatchEvent(event);
 	}
 }
