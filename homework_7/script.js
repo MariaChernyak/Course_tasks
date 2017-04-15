@@ -6,12 +6,14 @@ var framework = {
 		target.insertBefore(whot, target.firstChild)
 	},
 	replace: function(target, whot){
-		var el1=target.cloneNode();
-		var el2=whot.cloneNode();
-		target.parentNode.insertBefore(el2,target);
-		target.remove();
-		whot.parentNode.insertBefore(el1,whot);
-		whot.remove();
+		 target.parentNode.replaceChild(target, whot)
+
+		// var el1=target.cloneNode();
+		// var el2=whot.cloneNode();
+		// target.parentNode.insertBefore(el2,target);
+		// target.remove();
+		// whot.parentNode.insertBefore(el1,whot);
+		// whot.remove();
 	},
 	create: function(s){
 		return document.createElement(s);
