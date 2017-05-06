@@ -12,18 +12,19 @@ video.addEventListener('play', activevideo);
 // video.addEventListener('play', videoProgress);
 player.querySelector('.progressBar').addEventListener('click', changeProgress);
 video.addEventListener('pause', stopCurrentTime);
+video.addEventListener('click', videoPlay);
 
 var interval;
 function videoPlay(){
-	if(this.classList.contains('play')){
+	if(play.classList.contains('play')){
 		video.play();
-		this.classList.remove('play');
-		this.classList.add('pause');
+		play.classList.remove('play');
+		play.classList.add('pause');
 	}
 	else{
 		video.pause();
-		this.classList.remove('pause');
-		this.classList.add('play');
+		play.classList.remove('pause');
+		play.classList.add('play');
 	}
 }
 function videoStop(){
@@ -99,8 +100,7 @@ function activevideo(){
 		var progress = player.querySelector('.progress');
 		var time = video.currentTime*100/video.duration;
 		progress.style.width = time +'%';
-		var i=0;
-		console.log(i++);
+		
 	}, 500)
 }
 
@@ -114,6 +114,5 @@ function changeProgress(e){
 	var widthProgressBar = progressBar.clientWidth;
 	var left =progressBar.getBoundingClientRect().left;
 	var percent = (e.clientX - left)/widthProgressBar;
-	console.log(percent);
 	video.currentTime = video.duration * percent;
 }
