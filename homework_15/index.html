@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Видео проигрыватель</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<video src ="video.mp4"></video>
+	<div class="player">
+		<a  id="play" class="play"></a>
+		<a class="stop"></a>
+		<a class="slower"></a>
+		<a class="faster"></a>
+		<a id="muted" class="muted"></a>
+		<input class="range" type="range" min='0' max='1' step='0.1' name="range">
+		<div class="progressBar">
+			<div class="progress"></div>
+		</div>
+		<span class="currentTime">00:00</span>
+		<span>/</span>
+		<span class="time">00:00</span>
+	</div>
+</div>
+<script src = "script.js"></script>
+</body>
+</html>

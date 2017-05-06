@@ -1,0 +1,69 @@
+.container{
+	 		margin: 30px auto;
+	 		text-align: center;
+	 	}
+		.player{
+			background: #D3D3D3;
+			display: inline-block;
+			padding: 0 10px;
+		}
+		.player >*{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.play{
+			background-image: url(image/player_play.png);
+		}
+		.pause{
+			background-image: url(image/player_pause.png)
+		}
+		.stop{
+			background-image: url(image/player_stop.png)
+		}
+		.slower{
+			background-image: url(image/player_start.png)
+		}
+		.faster{
+			background-image: url(image/player_end.png)
+		}
+		.muted{
+			background-image: url(image/player_volume.png)
+		}
+		.active{
+			background-image: url(image/volume-muted.png)
+		}
+		.player >a{
+			width: 20px;
+			height: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+			
+		}
+		.progressBar{
+			width: 200px;
+			height: 10px;
+			border: 1px #BEBEBE solid;
+		}
+		.progress{
+			width: 0;
+			height: 100%;
+			background: #B9D3EE;
+
+		}
+		input[type=range] {
+		    -webkit-appearance: none;
+		    width: 40px;
+		    border-radius: 8px;
+		    height: 3px;
+		    border: 1px solid #bdc3c7;
+		    background-color: #fff;
+		} 
+		input[type='range']::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			background-color: #ecf0f1;
+			border: 1px solid #bdc3c7;
+			width: 15px;
+			height: 15px;
+			border-radius: 10px;
+			cursor: pointer;
+		}
