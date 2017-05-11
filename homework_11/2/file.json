@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"name": "товар 1",
+		"price": "100",
+		"img": "1.jpg",
+   	    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+	},
+	{
+		"id": 2,
+		"name": "товар 2",
+		"price": "100",
+		"img": "2.jpg",
+   	    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+	},
+	{
+		"id": 3,
+		"name": "товар 3",
+		"price": "100",
+		"img": "3.jpg",
+   	    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+	},
+	{
+		"id": 4,
+		"name": "товар 4",
+		"price": "100",
+		"img": "4.jpg",
+   	    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+	},
+	{
+		"id": 5,
+		"name": "товар 5",
+		"price": "100",
+		"img": "5.jpg",
+   	    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+	}
+  
+]

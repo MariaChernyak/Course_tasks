@@ -95,8 +95,10 @@ var framework = {
 	,
 	ajax: function(m, p, f){
 		var xhr = new XMLHttpRequest();
-		xhr.onload = f;
 		xhr.open(m, p, true); 
+		xhr.onload = function() {
+            f(xhr.responseText);
+        };
 		xhr.send();
 	}
 }
