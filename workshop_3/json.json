@@ -1,0 +1,17 @@
+[
+{
+	"name":"Hostel",
+	"icon":"1.png",
+	"path":"hostel.json"
+},
+{
+	"name":"Pharmacies",
+	"icon":"2.png",
+	"path":"Pharmacies.json"
+},
+{	
+	"name":"Score",
+	"icon":"3.png",
+	"path":"Score.json"
+}
+]
