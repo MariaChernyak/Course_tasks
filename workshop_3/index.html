@@ -3,26 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<style type="text/css">
-	.container{
-		max-width: 1200px;
-		overflow: hidden;
-	}
-	.aside{
-		width: 250px;
-		float: left;
-	}
-	.map{
-		width: 800px;
-		height: 600px;
-	}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="container">
 	<div class="aside">
 	<h2>Выберите категорию</h2>
-		<button>jk</button>
+		<ul class="category"></ul>
+		<ul class = "currentCategory"></ul>
+		<div class="routeContainer">
+			<h3>Маршрут</h3>
+			<ul class="route"></ul>
+			<p>Длина маршрута:<span class="distance"></span></p>
+		</div>	
 	</div>
 	<div class="map"></div>
 </div>

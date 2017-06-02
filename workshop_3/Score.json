@@ -1,23 +1,23 @@
 [
 {
 	"name":"Рублевский",
-	"coordslat":"57",
-	"coordslng":"25",
-	"img":"",
+	"coordslat": 57,
+	"coordslng": 25,
+	"img":"img/1.jpg",
 	"text":"ул. Минская 18"
 },
 {
 	"name":"Евроопт",
-	"coordslat":"57",
-	"coordslng":"25,88",
-	"img":"",
+	"coordslat": 57,
+	"coordslng": 25.88,
+	"img":"img/7.jpg",
 	"text":"ул. Европейская 18"
 },
 {
 	"name":"Алми",
-	"coordslat":"57",
-	"coordslng":"25,18",
-	"img":"",
+	"coordslat": 57,
+	"coordslng": 25.18,
+	"img":"img/3.jpg",
 	"text":"ул. Хоружей 18"
 }
 

@@ -1,23 +1,23 @@
 [
 {
 	"name":"Minsk",
-	"coordslat":"57",
-	"coordslng":"25",
-	"img":"",
+	"coordslat": 57,
+	"coordslng": 25,
+	"img":"img/1.jpg",
 	"text":"ул. Минская 18"
 },
 {
 	"name":"Spytnik",
-	"coordslat":"57",
-	"coordslng":"25,88",
-	"img":"",
+	"coordslat": 57,
+	"coordslng": 25.88,
+	"img":"img/2.jpg",
 	"text":"ул. Европейская 18"
 },
 {
 	"name":"Mir",
-	"coordslat":"57",
-	"coordslng":"25,18",
-	"img":"",
+	"coordslat": 57 ,
+	"coordslng": 25.18 ,
+	"img":"img/3.jpg",
 	"text":"ул. Хоружей 18"
 }
 
